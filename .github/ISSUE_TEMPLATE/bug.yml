@@ -1,0 +1,30 @@
+name: 軟體問題 / Bug report
+description: 回報可重現的操作問題；請勿附個人健康資料。
+body:
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 公開回報注意事項 / Public report
+      options:
+        - label: 我沒有附上健康紀錄、備份、PIN、密碼或可辨識個人的截圖。 / No private health data, backups or credentials are included.
+          required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 裝置、作業系統與瀏覽器 / Device, OS and browser
+      placeholder: iPhone / iOS version / Safari version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 重現步驟 / Steps to reproduce
+      description: 請用合成資料描述，不要提供真實經期日期或健康紀錄。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 預期與實際結果 / Expected and actual behavior
+    validations:
+      required: true
